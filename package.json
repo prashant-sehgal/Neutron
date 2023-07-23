@@ -7,7 +7,9 @@
         "start": "electron .",
         "watch:js": "parcel watch ./out/web/renderer.js --out-dir ./public/js --out-file bundle.js",
         "build:js": "parcel build ./out/web/renderer.js --out-dir ./public/js --out-file bundle.js",
-        "build": "electron-packager ./ --platform=win32 --arch=x64"
+        "build": "electron-packager ./ --platform=win32 --arch=x64",
+        "ts:build": "tsc",
+        "ts:watch": "tsc -w"
     },
     "keywords": [],
     "author": "",
