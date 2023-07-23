@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    padding: 5px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-active {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+}
+
+/* .actions button {
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    background: white;
+    border: 0;
+}
+
+.actions button:hover {
+    transition: 0.1s;
+    transform: scale(1.1);
+    background-color: rgb(233, 233, 233);
+} */
+
+.searchContainer {
+    flex: 0.9;
+    display: flex;
+    justify-content: center;
+}
+
+#search {
+    width: 100%;
+    max-width: 700px;
+    height: 40px;
+    border-radius: 25px 0px 0px 25px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid rgb(126, 126, 126);
+    border-right: 0;
+}
+
+#search:focus {
+    outline: none;
+    border-color: rgb(0, 110, 255);
+}
+
+#searchButton {
+    border: 0;
+    width: 60px;
+    height: 40px;
+    border-radius: 0px 25px 25px 0px;
+    background-color: rgb(0, 110, 255);
+    border-left: 0;
+}
+
+#searchButton span {
+    color: white;
+}
+
+#searchButton:active {
+    transition: 0.1s;
+    transform: scale(0.9);
+}
+
+.bookmarksContainer {
+    display: flex;
+}
+
+.bookmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    width: fit-content;
+    height: 30px;
+    padding: 1px;
+    cursor: default;
+    border-radius: 15px;
+}
+
+.bookmark:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.bookmark img {
+    width: 17px;
+    height: 17px;
+}
+
+.bookmark-title {
+    font-size: 14px;
+    margin: 4px;
+}
+
+.tabsContainer {
+    display: flex;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    margin-top: 5px;
+}
+
+.tab {
+    font-size: 13px;
+    display: flex;
+    width: 150px;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgb(126, 126, 126);
+    padding: 5px;
+    margin-right: 5px;
+    background-color: rgb(207, 207, 207);
+    cursor: default;
+}
+
+.active {
+    background-color: rgb(255, 255, 255);
+}
+
+.loading-icon {
+    color: rgb(0, 110, 255);
+    font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 48;
+    animation: rotate 1.5s linear infinite;
+}
+
+.close-tab {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+
+.close-tab:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.close-tab span {
+    font-size: large;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* #newTab {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(126, 126, 126);
+    border-radius: 20px;
+    background-color: white;
+}
+
+#newTab:hover {
+    background-color: rgb(233, 233, 233);
+} */
+
+.actionButton {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(126, 126, 126);
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.actionButton:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.actionButton-dark {
+    color: white;
+}
+
+.actionButton-dark:hover {
+    background-color: #242427;
+}
+
+.webviewContainer {
+    flex: 1;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+    display: flex;
+}
+
+.tabWebViews {
+    flex: 1;
+}
+
+.bard {
+    flex: 0.3;
+    min-width: 400px;
+}
+
+webview {
+    height: 100%;
+}
+
+.darkMode {
+    background-color: #18181a;
+    color: white;
+}
+
+.webviewDarkMode {
+    box-shadow: 0px 0px 3px white;
+}
+
+.active-dark {
+    background-color: #0e0e0f;
+}
+
+/* .action-button-da */
+.close-tab-dark:hover {
+    background-color: #222225;
+}

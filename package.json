@@ -1,0 +1,21 @@
+{
+    "name": "neutron",
+    "version": "1.0.0",
+    "description": "",
+    "main": "out/main.js",
+    "scripts": {
+        "start": "electron .",
+        "watch:js": "parcel watch ./out/web/renderer.js --out-dir ./public/js --out-file bundle.js",
+        "build:js": "parcel build ./out/web/renderer.js --out-dir ./public/js --out-file bundle.js",
+        "build": "electron-packager ./ --platform=win32 --arch=x64"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.4.2",
+        "electron": "^25.3.0",
+        "electron-packager": "^17.1.1",
+        "parcel-bundler": "^1.12.5"
+    }
+}
